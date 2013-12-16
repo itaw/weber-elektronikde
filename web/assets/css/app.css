@@ -42,6 +42,18 @@ body {
     color: #ffffff;
 }
 
+.nav-link > div {
+    display: none;
+}
+
+.nav-link > div:first-child {
+    display: block;
+}
+
+.nav-link:hover > div {
+    display: block;
+}
+
 .nav-area .nav-link {
     background-color:rgba(219, 219, 219, 0.7);
     margin-bottom: 30px;
@@ -51,6 +63,10 @@ body {
     width: 70px;
     -moz-border-radius: 35px;
     border-radius: 35px;
+}
+
+.nav-area .nav-link:hover {
+    background-color:rgba(0, 0, 140, 0.7);
 }
 
 .nav-area .active-link {
@@ -67,13 +83,19 @@ body {
 .nav-area .link-text a {
     font-size: 20px;
     font-weight: 400;
-    display: none;
+    color: #000;
+    text-decoration: none;
 }
 
 .nav-area .active-text a {
     font-size: 20px;
     font-weight: 400;
-    display: block;
     color: #00008C;
     text-decoration: none;
+    display: block;
+}
+
+.content-box {
+    font-size: 18px;
+    padding-top: 50px;
 }
