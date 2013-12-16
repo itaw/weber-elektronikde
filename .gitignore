@@ -215,5 +215,8 @@ pip-log.txt
 .mr.developer.cfg
 
 /nbproject/*
+<<<<<<< HEAD
 *.lock
 /vendor/*
+=======
+>>>>>>> parent of 5ed7175... app skeleton
