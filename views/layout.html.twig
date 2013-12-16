@@ -4,8 +4,17 @@
         <title>Weber-Elektronik</title>
         <link rel="stylesheet" type="text/css" href="{{app.request.baseUrl}}/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="{{app.request.baseUrl}}/assets/css/app.css" />
+        
+        <!-- FONTS -->
+        <script src="//use.edgefonts.net/abel:n4:all.js"></script>
     </head>
-    <body>
+    <body style="background-image: url('{{app.request.baseUrl}}/assets/img/textures/white_wall_hash_.png');">
+        <div id="wrap">
+            {% block app %}{% endblock %}
+            <div id="footer" class="muted">
+                &copy; 2014 IT-Dienstleistungen und Unternehmensberatung Andreas Weber &middot; Impressum
+            </div>
+        </div>
     </body>
     <script src="{{app.request.baseUrl}}/assets/js/lib/jquery-2.0.3.min.js"></script>
     <script src="{{app.request.baseUrl}}/assets/js/lib/handlebars-v1.1.2.js"></script>

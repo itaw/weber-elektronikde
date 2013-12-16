@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+    font-family: abel, sans-serif;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 0px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.muted {
+    color: #999;
+    font-size: 14px;
+}
+
+.page {
+    padding-top: 40px;
+}
+
+.nav-area {
+    padding-top: 10%;
+}
+
+.nav-area a {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.nav-area .nav-link {
+    background-color:rgba(219, 219, 219, 0.7);
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 19px;
+    height: 70px;
+    width: 70px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+
+.nav-area .active-link {
+    background-color:rgba(0, 0, 140, 0.7);
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 19px;
+    height: 70px;
+    width: 70px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+
+.nav-area .link-text a {
+    font-size: 20px;
+    font-weight: 400;
+    display: none;
+}
+
+.nav-area .active-text a {
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    color: #00008C;
+    text-decoration: none;
+}

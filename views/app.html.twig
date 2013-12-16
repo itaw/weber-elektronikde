@@ -1,0 +1,43 @@
+{% extends 'layout.html.twig' %}
+
+{% block app %}
+
+<div class="container">
+    <div class="col-lg-12 page">
+        <div class="row">
+            <div class="col-lg-11 content-area">
+                <div class="header">
+                    <img src="{{app.request.baseUrl}}/assets/img/logo.png" alt="Logo">
+                </div>
+            </div>
+            <div class="col-lg-1 nav-area">
+                <div class="nav-link">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                    <div class="link-text"><a href="#">Shop</a></div>
+                </div>
+                <div class="nav-link active-link">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                    </a>
+                    <div class="link-text active-text"><a href="#">Über Uns</a></div>
+                </div>
+                <div class="nav-link">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-tint"></span>
+                    </a>
+                    <div class="link-text"><a href="#">Referenzen</a></div>
+                </div>
+                <div class="nav-link">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-send"></span>
+                    </a>
+                    <div class="link-text"><a href="#">Kontakt</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

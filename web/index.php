@@ -9,7 +9,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app->get('/', function() use($app) {
-            return $app['twig']->render('index.html.twig');
+            return $app['twig']->render('app.html.twig');
         });
 
 $app['debug'] = true;
