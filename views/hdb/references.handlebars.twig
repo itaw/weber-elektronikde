@@ -1,1 +1,75 @@
-References
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Leistungen</h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <h3>IT-Dienstleistungen</h3>
+                Unsere Dienstleistungen umfassen sowohl die Lieferung von Verbrauchsmaterial,<br>
+                wie Tinte oder Toner,<br>
+                als auch die Konzeption von Computersystemen und Verkauf von IT-Hardware und Software.<br>
+                Sie benötigen etwas?<br>
+                Schauen Sie sich in unserem <a href="http://shop.weber-elektronik.de/">Online-Shop</a> um oder {% raw %}{{#link-to 'contact'}}kontaktieren{{/link-to}}{% endraw %} Sie uns schnell persönlich.
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h3>Unternehmensberatung</h3>
+                Sie haben eine Idee?<br>
+                Wir können Ihnen helfen diese Realität werden zu lassen!<br>
+                Braucht Ihr Unternehmen hilfe?<br>
+                Wir beraten Sie gern!<br>
+            </div>            
+            <div class="col-lg-4 col-md-4">
+                <h3>Webdesign</h3>
+                Erfolgreiche Unternehmungen brauchen einen professionellen Webauftritt.<br>
+                Als Sprachrohr zu Ihren Kunden oder zur Präsentation ihrer Produkte - <br>
+                wir erfüllen Ihre Wünsche!<br>
+                <br>
+                Mit modernsten Technologien schaffen wir Ihnen eine Zukunftssichere Website,<br>
+                welche mit Ihren Anforderungen wachsen kann.
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<hr>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Webdesign Referenzen</h2>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{{app.request.baseUrl}}/assets/img/references/klemmer.png" alt="Friseur Klemmer">
+                    <div class="carousel-caption">
+                        <h3>Friseursalon Klemmer</h3>
+                        <p><a href="http://friseur-klemmer.de/">http://friseur-klemmer.de/</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{app.request.baseUrl}}/assets/img/references/korpus.png" alt="Korpus">
+                    <div class="carousel-caption">
+                        <h3>Korpus</h3>
+                        <p><a href="http://korpus-metal.de">http://korpus-metal.de</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</div>

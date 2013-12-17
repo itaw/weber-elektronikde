@@ -34,7 +34,7 @@ App.ApplicationController = Ember.Controller.extend({
             var a = $(this).innerHeight() - 30;
             var scrollPos = $(window).scrollTop();
 
-            var e = scrollPos + ((w - a) / 3);
+            var e = scrollPos + ((w - a) / 2);
             $(this).css('margin-top', e + 'px');
         });
     },
@@ -58,7 +58,7 @@ $(document).ready(function() {
             var a = $(this).innerHeight() - 30;
             var scrollPos = $(window).scrollTop();
 
-            var e = scrollPos + ((w - a) / 3);
+            var e = scrollPos + ((w - a) / 2);
             $(this).css('margin-top', e + 'px');
         });
     });
@@ -69,7 +69,7 @@ $(document).ready(function() {
             var a = $(this).innerHeight() - 30;
             var scrollPos = $(window).scrollTop();
 
-            var e = scrollPos + ((w - a) / 3);
+            var e = scrollPos + ((w - a) / 2);
             $(this).css('margin-top', e + 'px');
         });
     });
