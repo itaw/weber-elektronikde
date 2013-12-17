@@ -8,17 +8,15 @@
         <!-- FONTS -->
         <script src="//use.edgefonts.net/abel:n4:all.js"></script>
     </head>
-    <body style="background-image: url('{{app.request.baseUrl}}/assets/img/textures/white_wall_hash_.png');">
-        <div id="wrap">
-            {% block app %}{% endblock %}
-            <div id="footer" class="muted">
-                &copy; 2014 IT-Dienstleistungen und Unternehmensberatung Andreas Weber &middot; Impressum
-            </div>
-        </div>
+    <body>
+        {#<div id="wrap">#}
+            {% block app %}{% endblock %}            
+        {#</div>#}
     </body>
     <script src="{{app.request.baseUrl}}/assets/js/lib/jquery-2.0.3.min.js"></script>
     <script src="{{app.request.baseUrl}}/assets/js/lib/handlebars-v1.1.2.js"></script>
     <script src="{{app.request.baseUrl}}/assets/js/lib/ember.min.js"></script>
     <script src="{{app.request.baseUrl}}/assets/js/lib/bootstrap.min.js"></script>
-    <script src="{{app.request.baseUrl}}/assets/js/lib/app.js"></script>
+    <script src="{{app.request.baseUrl}}/assets/js/lib/livequery.js"></script>
+    <script src="{{app.request.baseUrl}}/assets/js/app.js"></script>
 </html>

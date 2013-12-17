@@ -17,7 +17,7 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-#footer {
+footer {
     height: 60px;
     text-align: center;
     padding-top: 10px;
@@ -33,8 +33,17 @@ body {
     padding-top: 40px;
 }
 
+@media (max-width: 481px) {
+    .header img {
+        width: 100%;
+    }
+}
+
+.header img {
+}
+
 .nav-area {
-    padding-top: 10%;
+    padding-top: 100px;
 }
 
 .nav-area a {
@@ -55,7 +64,7 @@ body {
 }
 
 .nav-area .nav-link {
-    background-color:rgba(219, 219, 219, 0.7);
+    background-color:rgba(200, 200, 200, 0.7);
     margin-bottom: 30px;
     text-align: center;
     padding-top: 19px;
@@ -97,5 +106,21 @@ body {
 
 .content-box {
     font-size: 18px;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+}
+
+.small-nav-area {
+    margin-top: 20px;
+}
+
+.buffer-20 {
+    height: 20px;
+}
+
+.buffer-30 {
+    height: 30px;
+}
+
+.buffer-50 {
+    height: 50px;
 }

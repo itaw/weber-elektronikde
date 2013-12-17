@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="col-lg-12 page">
+        <div class="row">
+            <div class="col-lg-11 col-md-11 content-area">
+                <div class="header">
+                    <img src="{{app.request.baseUrl}}/assets/img/logo.png" alt="Logo">
+                </div>
+                <div class="small-nav-area visible-sm visible-xs">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand hidden-sm" href="#">{% raw %}{{appName}}{% endraw %}</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Shop</a></li>
+                                <li class="active"><a href="#">Über Uns</a></li>
+                                <li><a href="#">Referenzen</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                <div class="buffer-20 visible-sm"></div>
+                <div class="buffer-50 visible-md visible-lg"></div>
+                <div class="content-box">
+                    {% raw %}{{outlet}}{% endraw %}
+                </div>
+            </div>
+            {% raw %}
+            <div class="col-lg-1 col-md-1 nav-area hidden-sm hidden-xs">
+                <div class="nav-link">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </a>
+                    <div class="link-text"><a href="#">Shop</a></div>
+                </div>
+                <div class="nav-link" id="al-about">
+                    {{#link-to 'about'}}<span class="glyphicon glyphicon-comment"></span>{{/link-to}}
+                    <div class="link-text" id="at-about">{{#link-to 'about'}}Über Uns{{/link-to}}</div>
+                </div>
+                <div class="nav-link" id="al-references">
+                    {{#link-to 'references'}}<span class="glyphicon glyphicon-paperclip"></span>{{/link-to}}
+                    <div class="link-text" id="at-about">{{#link-to 'references'}}Referenzen{{/link-to}}</div>
+                </div>
+                <div class="nav-link" id="al-contact">
+                    {{#link-to 'contact'}}<span class="glyphicon glyphicon-envelope"></span>{{/link-to}}
+                    <div class="link-text" id="at-contact">{{#link-to 'contact'}}Kontakt{{/link-to}}</div>
+                </div>
+            </div>
+            {% endraw %}
+        </div>
+    </div>
+
+    <footer>
+        <div class="muted">
+            &copy; 2014 IT-Dienstleistungen und Unternehmensberatung Andreas Weber &middot; Impressum
+        </div>
+    </footer>
+</div>
