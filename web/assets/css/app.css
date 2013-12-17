@@ -20,7 +20,7 @@ body {
 footer {
     height: 60px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -29,8 +29,9 @@ footer {
     font-size: 14px;
 }
 
-.page {
+.content-area {
     padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 @media (max-width: 481px) {
@@ -43,7 +44,7 @@ footer {
 }
 
 .nav-area {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
 }
 
 .nav-area a {

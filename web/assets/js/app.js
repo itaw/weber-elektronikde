@@ -1,13 +1,14 @@
 
 window.App = Ember.Application.create();
 
-window.App.Router.map(function() {
+App.Router.map(function() {
     this.route("about", {path: "/about"});
     this.route("references", {path: "/references"});
     this.route("contact", {path: "/contact"});
+    this.route("imprint", {path: "/imprint"});
 });
 
-window.App.ApplicationController = Ember.Controller.extend({
+App.ApplicationController = Ember.Controller.extend({
     updateLinks: function(path) {
         $('.nav-link').livequery(function() {
             $(this).removeClass('active-link');
@@ -22,18 +23,26 @@ window.App.ApplicationController = Ember.Controller.extend({
             $(this).addClass('active-text');
         });
     },
+    init: function() {
+        $('.nav-area').livequery(function() {
+            var w = $(window).innerHeight();
+            var a = $(this).innerHeight() - 30;
+
+            var e = (w - a) / 2;
+            
+            console.log(e);
+            
+            $(this).css('margin-top', e + 'px');
+        });
+    },
     routeChanged: function() {
         this.updateLinks(this.get('currentPath'));
-    }.observes('currentPath')
+    }.observes('currentPath'),
+    appName: 'Weber-Elektronik'
 });
 
 App.IndexRoute = Ember.Route.extend({
     beforeModel: function() {
         this.transitionTo('about');
-    }
-});
-
-App.AboutRoute = Ember.Route.extend({
-    setupController: function(controller) {
     }
 });

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-11 col-md-11 content-area">
                 <div class="header">
-                    <img src="{{app.request.baseUrl}}/assets/img/logo.png" alt="Logo">
+                    {% raw %}{{#link-to 'index'}}{% endraw %}<img src="{{app.request.baseUrl}}/assets/img/logo.png" alt="Logo">{% raw %}{{/link-to}}{% endraw %}
                 </div>
                 <div class="small-nav-area visible-sm visible-xs">
                     <nav class="navbar navbar-default" role="navigation">
@@ -62,7 +62,7 @@
 
     <footer>
         <div class="muted">
-            &copy; 2014 IT-Dienstleistungen und Unternehmensberatung Andreas Weber &middot; Impressum
+            &copy; 2014 IT-Dienstleistungen und Unternehmensberatung Andreas Weber &middot; {% raw %}{{#link-to 'imprint'}}Impressum{{/link-to}}{% endraw %}
         </div>
     </footer>
 </div>
