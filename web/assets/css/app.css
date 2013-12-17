@@ -5,14 +5,14 @@ body {
     font-family: abel, sans-serif;
 }
 
-/* Wrapper for page content to push down footer */
+/*Wrapper for page content to push down footer*/ 
 #wrap {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    /* Negative indent footer by its height */
+    /*Negative indent footer by its height*/ 
     margin: 0 auto -60px;
-    /* Pad bottom by footer height */
+    /*Pad bottom by footer height*/ 
     padding: 0 0 0px;
 }
 
@@ -20,8 +20,13 @@ body {
 footer {
     height: 60px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
+}
+
+.foot {
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .muted {
@@ -30,7 +35,7 @@ footer {
 }
 
 .content-area {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -122,6 +127,14 @@ footer {
     height: 30px;
 }
 
+.buffer-40 {
+    height: 40px;
+}
+
 .buffer-50 {
     height: 50px;
+}
+
+#index-quote {
+    margin-top: 50px;
 }

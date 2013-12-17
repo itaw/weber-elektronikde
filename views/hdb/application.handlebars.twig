@@ -15,22 +15,26 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand hidden-sm" href="#">{% raw %}{{appName}}{% endraw %}</a>
+                            {% raw %}{{#link-to 'index' bind-attr class='navbar-brand'}}{{appName}}{{/link-to}}{% endraw %}
                         </div>
-
+                        
+                        {% raw %}
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a href="#">Shop</a></li>
-                                <li class="active"><a href="#">Über Uns</a></li>
-                                <li><a href="#">Referenzen</a></li>
-                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="http://shop.weber-elektronik.de/">Shop</a></li>
+                                <li id="nl-index">{{#link-to 'index'}}Home{{/link-to}}</li>
+                                <li id="nl-about">{{#link-to 'about'}}Über Uns{{/link-to}}</li>
+                                <li id="nl-references">{{#link-to 'references'}}Referenzen{{/link-to}}</li>
+                                <li id="nl-contact">{{#link-to 'contact'}}Kontakt{{/link-to}}</li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
+                        {% endraw %}
+                        
                     </nav>
                 </div>
                 <div class="buffer-20 visible-sm"></div>
-                <div class="buffer-50 visible-md visible-lg"></div>
+                <div class="buffer-40 visible-md visible-lg"></div>
                 <div class="content-box">
                     {% raw %}{{outlet}}{% endraw %}
                 </div>
@@ -38,10 +42,14 @@
             {% raw %}
             <div class="col-lg-1 col-md-1 nav-area hidden-sm hidden-xs">
                 <div class="nav-link">
-                    <a href="#">
+                    <a href="http://shop.weber-elektronik.de/">
                         <span class="glyphicon glyphicon-shopping-cart"></span>
                     </a>
-                    <div class="link-text"><a href="#">Shop</a></div>
+                    <div class="link-text"><a href="http://shop.weber-elektronik.de/">Shop</a></div>
+                </div>
+                <div class="nav-link" id="al-index">
+                    {{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span>{{/link-to}}
+                    <div class="link-text" id="at-index">{{#link-to 'index'}}Home{{/link-to}}</div>
                 </div>
                 <div class="nav-link" id="al-about">
                     {{#link-to 'about'}}<span class="glyphicon glyphicon-comment"></span>{{/link-to}}
@@ -61,8 +69,12 @@
     </div>
 
     <footer>
-        <div class="muted">
+        <div class="muted foot">
+            <br>
+            <br>
             &copy; 2014 IT-Dienstleistungen und Unternehmensberatung Andreas Weber &middot; {% raw %}{{#link-to 'imprint'}}Impressum{{/link-to}}{% endraw %}
+            <br>
+            <br>
         </div>
     </footer>
 </div>
